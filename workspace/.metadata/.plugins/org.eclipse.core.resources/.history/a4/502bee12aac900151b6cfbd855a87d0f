@@ -1,0 +1,78 @@
+package stock_trader;
+
+import java.util.Random;
+
+
+public class Main {
+	
+	public float price;
+	public float fair;
+	public float high;
+	public float low;
+	public int rating;
+	
+	public static void main(String [ ] args)
+	{
+    System.out.println("Hello");
+	}
+	
+	public Main(float startPrice, float startFair,float startHigh, float startLow,
+			int startRating){
+		
+		price = startPrice;
+		fair = startFair;
+		high = startHigh;
+		low = startLow;
+		rating = startRating;
+	}
+
+		
+	public void setPrice(float randomNumInt){
+		
+		price = randomNumInt;
+				
+	}
+
+	public void setFair(float randomNumInt){
+		
+		fair = randomNumInt;
+				
+	}
+
+	public void setHigh(float randomNumInt){
+		
+		high = randomNumInt;
+				
+	}
+
+	public void setLow(float randomNumInt){
+		
+		low = randomNumInt;
+				
+	}
+
+	public void setRating(int randomNumFloat){
+		
+		rating = randomNumFloat;
+				
+	}
+
+
+	public int randInt(int min, int max) {
+
+	    Random rand = new Random();
+	    int randomNumInt = rand.nextInt((max - min) + 1) + min;
+
+	    return randomNumInt;
+	}
+
+	public float randFloat(float min, float max){
+		
+		Random rand = new Random();
+		float randomNumFloat = rand.nextFloat()*((max - min) + 1) + min;
+		
+		return randomNumFloat;
+		
+	}
+
+}

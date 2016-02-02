@@ -1,0 +1,14 @@
+package stock_trader;
+
+public class Main {
+	
+	public float price;
+	
+	public static void main(String [ ] args)
+	
+	{
+    System.out.println("Hello");
+	}
+	
+
+}

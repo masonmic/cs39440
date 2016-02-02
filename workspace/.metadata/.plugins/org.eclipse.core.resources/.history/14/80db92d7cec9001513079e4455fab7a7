@@ -1,0 +1,21 @@
+package stock_trader;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	static ArrayList<Float> myHistory = new ArrayList<>();
+	
+	public static void main(String [ ] args)
+	
+	{
+    
+	Stock test = new Stock();
+	
+    System.out.println("" + test.getRating());
+    myHistory.add((float) test.getHigh());
+    
+	}
+	
+
+}

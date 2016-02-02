@@ -1,0 +1,15 @@
+package stock_trader;
+
+public class Main {
+
+	
+	public static void main(String [ ] args)
+	
+	{
+    
+	Stock test = new Stock(1, 2, 3, 0, 0);
+    System.out.println("" + test);
+	}
+	
+
+}

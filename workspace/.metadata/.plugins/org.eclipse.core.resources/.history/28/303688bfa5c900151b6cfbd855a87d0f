@@ -1,0 +1,34 @@
+package stock_trader;
+
+public class Stock {
+	
+public float price;
+public float fair;
+public float high;
+public float low;
+public int rating;
+
+
+public Stock(float startPrice, float startFair,float startHigh, float startLow,
+		int startRating){
+	
+	price = startPrice;
+	fair = startFair;
+	high = startHigh;
+	low = startLow;
+	rating = startRating;
+
+	
+public void setPrice(float newValue){
+	
+	price = newValue
+			
+}
+
+			
+	
+}
+
+	
+	
+}

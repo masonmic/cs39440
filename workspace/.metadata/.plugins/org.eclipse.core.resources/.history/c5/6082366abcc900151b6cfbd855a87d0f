@@ -1,0 +1,16 @@
+package stock_trader;
+
+public class Main {
+
+	
+	public static void main(String [ ] args)
+	
+	{
+    
+	Stock test = new Stock();
+	test.setPrice();
+    System.out.println("" + test.getPrice());
+	}
+	
+
+}

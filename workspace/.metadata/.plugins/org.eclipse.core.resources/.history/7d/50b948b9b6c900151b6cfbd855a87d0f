@@ -1,0 +1,37 @@
+package stock_trader;
+
+import java.util.Random;
+
+
+public class Stock {
+	
+public float price;
+public float fair;
+public float high;
+public float low;
+public int rating;
+
+
+//public Stock(float getPrice, float getFair,float getHigh, float getLow,
+	//	int getRating){
+
+	//price = getPrice;
+	//fair = getFair;
+	//high = getHigh;
+	//low = getLow;
+	//rating = getRating;
+//}
+
+	
+
+}
+			
+	
+
+
+
+
+
+	
+	
+

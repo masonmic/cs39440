@@ -1,0 +1,21 @@
+package stock_trader;
+
+public class Main {
+
+	
+	public static void main(String [ ] args)
+	
+	{
+    
+	Stock test = new Stock();
+	getPrice();
+    System.out.println("" + test);
+	}
+
+	private static void getPrice() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

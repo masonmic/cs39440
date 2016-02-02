@@ -1,0 +1,20 @@
+package stock_trader;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	ArrayList<Integer> myHistory = new ArrayList<>();
+	
+	public static void main(String [ ] args)
+	
+	{
+    
+	Stock test = new Stock();
+	
+    System.out.println("" + test.getRating());
+    myHistory.add(test.getFair());
+	}
+	
+
+}
