@@ -1,6 +1,6 @@
 package stock_trader;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.Random;
 
 
@@ -13,7 +13,7 @@ public float low;
 public int rating;
 
 
-ArrayList<Integer> myHistory = new ArrayList<>();
+//ArrayList<Integer> myHistory = new ArrayList<>();
 
 public Stock(){
 
@@ -93,7 +93,7 @@ private int randInt(int min, int max) {
 private float randFloat(float min, float max){
 	
 	Random rand = new Random();
-	float randomNumFloat = rand.nextFloat()*((max - min) + 10);	
+	float randomNumFloat = rand.nextFloat()*((max - min) + 9999);	
 	return randomNumFloat;
 	
 }

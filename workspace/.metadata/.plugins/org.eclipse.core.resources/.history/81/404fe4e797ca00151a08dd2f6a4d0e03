@@ -1,0 +1,10 @@
+package stock_trader;
+
+
+import java.util.ArrayList;
+
+public class Tesco extends Stock {
+
+	ArrayList<Integer> myHistory = new ArrayList<>();
+    
+}

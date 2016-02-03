@@ -1,0 +1,75 @@
+package stock_trader;
+
+import java.util.ArrayList;
+
+public class Environment {
+
+	public static float Price(){
+
+
+		ArrayList<Float> listPrice= new ArrayList<>();
+		float priceOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listPrice.add((float) floor.getPrice());
+
+		}
+		
+		priceOut = calcAvgPrice(listPrice);
+		System.out.println("PRICE " + priceOut);
+		return priceOut;
+
+	}
+	public static float calcAvgPrice(ArrayList<Float> listPrice){
+
+		float sum = 0;
+		for (Float meanFloat :listPrice){
+
+			sum += meanFloat;
+		}
+		return (listPrice.isEmpty()? 0: 1*sum/listPrice.size());
+	}
+
+	
+	
+	public static float Fair(){
+
+
+		ArrayList<Float> listFair= new ArrayList<>();
+		float fairOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listFair.add((float) floor.getPrice());
+
+		}
+		
+		fairOut = calcAvg(listFair);
+		System.out.println("PRICE " + fairOut);
+		return fairOut;
+
+	}
+	public static float calcAvg(ArrayList<Float> listFair){
+
+		float sum = 0;
+		for (Float meanFloat :listFair){
+
+			sum += meanFloat;
+		}
+		return (listFair.isEmpty()? 0: 1*sum/listFair.size());
+	}
+
+}
+
+//ArrayList<Float> listFair = new ArrayList<>();
+//ArrayList<Float> listHigh = new ArrayList<>();
+//ArrayList<Float> listLow = new ArrayList<>();
+//ArrayList<Integer> listRating = new ArrayList<>();
+
+
+
+//listFair.add((float) floor.getFair());
+//listHigh.add((float) floor.getHigh());
+//listLow.add((float) floor.getLow());
+//listRating.add((int) floor.getRating());

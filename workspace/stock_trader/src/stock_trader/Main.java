@@ -1,25 +1,32 @@
 package stock_trader;
 
-import java.util.ArrayList;
+
 
 public class Main {
 
-	static ArrayList<Float> myHistory = new ArrayList<>();
-	
-	public static void main(String [ ] args)
-	
-	{
-    
-    for(int i=1; i<11; i++){
-	Stock test = new Stock();
-    myHistory.add((float) test.getHigh());
-    
-    
-    
-    System.out.println("" + test.getRating());
-    System.out.println(myHistory);
-    
-	}
-	}
 
+
+	public static void main(String [ ] args){
+		
+		float a = Environment.Price();
+		float b = Environment.High();
+		float c = Environment.Low();
+		float d = Environment.Fair();
+		int e = Environment.Rating();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//Stock tesco = new Stock();
+		
+
+	}
 }

@@ -1,0 +1,33 @@
+package stock_trader;
+
+import java.util.ArrayList;
+
+public class Environment {
+
+	public static float Price(){
+
+
+		ArrayList<Float> listPrice= new ArrayList<>();
+		float listOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listPrice.add((float) floor.getPrice());
+
+		}
+		
+		listOut = calcAvg(listPrice);
+		System.out.println("PRICE " + listOut);
+		return listOut;
+
+	}
+	public static float calcAvg(ArrayList<Float> listPrice){
+
+		float sum = 0;
+		for (Float meanFloat :listPrice){
+
+			sum += meanFloat;
+		}
+		return (listPrice.isEmpty()? 0: 1*sum/listPrice.size());
+	}
+}

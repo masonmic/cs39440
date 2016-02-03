@@ -1,10 +1,150 @@
 package stock_trader;
 
+import java.util.ArrayList;
+
 public class Environment {
+
+	public static float Price(){
+
+
+		ArrayList<Float> listPrice= new ArrayList<>();
+		float priceOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listPrice.add((float) floor.getPrice());
+
+		}
+
+		priceOut = calcAvgPrice(listPrice);
+		System.out.println("PRICE " + priceOut);
+		return priceOut;
+
+	}
+	public static float calcAvgPrice(ArrayList<Float> listPrice){
+
+		float sum = 0;
+		for (Float meanFloat :listPrice){
+
+			sum += meanFloat;
+		}
+		return (listPrice.isEmpty()? 0: sum/listPrice.size());
+	}
+
+
+
+	public static float Fair(){
+
+
+		ArrayList<Float> listFair= new ArrayList<>();
+		float fairOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listFair.add((float) floor.getFair());
+
+		}
+
+		fairOut = calcAvgFair(listFair);
+		System.out.println("FAIR " + fairOut);
+		return fairOut;
+
+	}
+	public static float calcAvgFair(ArrayList<Float> listFair){
+
+		float sum = 0;
+		for (Float meanFloat :listFair){
+
+			sum += meanFloat;
+		}
+		return (listFair.isEmpty()? 0: sum/listFair.size());
+	}
+	
+	public static float High(){
+
+
+		ArrayList<Float> listHigh= new ArrayList<>();
+		float highOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listHigh.add((float) floor.getHigh());
+
+		}
+
+		highOut = calcAvgHigh(listHigh);
+		System.out.println("HIGH " + highOut);
+		return highOut;
+
+	}
+	public static float calcAvgHigh(ArrayList<Float> listHigh){
+
+		float sum = 0;
+		for (Float meanFloat :listHigh){
+
+			sum += meanFloat;
+		}
+		return (listHigh.isEmpty()? 0: sum/listHigh.size());
+	}
 	
 	
 	
+	public static float Low(){
+
+
+		ArrayList<Float> listLow= new ArrayList<>();
+		float highOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listLow.add((float) floor.getLow());
+
+		}
+
+		highOut = calcAvgHigh(listLow);
+		System.out.println("LOW " + highOut);
+		return highOut;
+
+	}
+	public static float calcAvgLow(ArrayList<Float> listLow){
+
+		float sum = 0;
+		for (Float meanFloat :listLow){
+
+			sum += meanFloat;
+		}
+		return (listLow.isEmpty()? 0: sum/listLow.size());
+	}
 	
+
+	
+	public static int Rating(){
+
+
+		ArrayList<Integer> listRating= new ArrayList<>();
+		int ratingOut;
+		for(int i=0; i<100; i++){
+			Stock floor = new Stock();
+
+			listRating.add((int) floor.getLow());
+
+		}
+
+		ratingOut = calcAvgRating(listRating);
+		System.out.println("RATING " + ratingOut);
+		return ratingOut;
+
+	}
+	public static int calcAvgRating(ArrayList<Integer> listRating){
+
+		int sum = 0;
+		for (Integer meanInt :listRating){
+
+			sum += meanInt;
+		}
+		return (listRating.isEmpty()? 0: sum/listRating.size());
+	}
 	
 
 }
+
